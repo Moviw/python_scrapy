@@ -1,2 +1,2 @@
-asd=['asd','a']
-print(asd[2])
+url='https://www.quanjing.com/search/星空#星空||1|100|1|2||||||'
+print(url)

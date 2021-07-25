@@ -25,7 +25,7 @@ for li in li_list:
     #要注意获取图片地址时是否前面还有前缀
     #./用来表示“在当前层级下”
     #用@取得属性值
-    src="https://pic.netbian.com"+li.xpath("./a/img/@src")[0]  #因为返回的是一个列表所以在最后要用[0]取到第一个元素  
+    src="https://pic.netbian.com"+li.xpath("./a/img/@src")[0]  #因为返回的是一个列表 所以在最后要用[0]取到第一个元素  
 
     alt=li.xpath("./a/img/@alt")[0]+'.jpg'                      #要在最后加上.jpg，要不然没有后缀名
  

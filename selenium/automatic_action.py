@@ -16,6 +16,7 @@ from time import sleep
 时写下面三行代码
 并将它们用于创建对象的传入的参数中
 '''
+
 option = webdriver.ChromeOptions()
 # 防止打印一些无用的日志
 option.add_experimental_option("excludeSwitches", ['enable-automation', 'enable-logging'])

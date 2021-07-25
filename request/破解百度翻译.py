@@ -14,7 +14,10 @@ data={
 response =requests.post(url=post_url,data=data,headers=headers)
 
 dic=response.json()
-filename=kw+'.json'
-fp=open(filename,'w',encoding='utf-8')
-json.dump(dic,fp=fp,ensure_ascii=False)
+data=dic['data']
+for ele in data:
+    print(ele['k'],':',ele['v'])
+# filename=kw+'.json'
+# fp=open(filename,'w',encoding='utf-8')
+# json.dump(dic,fp=fp,ensure_ascii=False)
 print('单词%s的json格式文件已生成!'%kw)

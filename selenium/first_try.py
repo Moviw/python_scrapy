@@ -23,7 +23,7 @@ option = webdriver.ChromeOptions()
 # 防止打印一些无用的日志
 option.add_experimental_option("excludeSwitches", ['enable-automation', 'enable-logging'])
 
-driver=webdriver.Chrome(chrome_options=option,executable_path='C:/Users/19735/anaconda3/pkgs/python-3.8.3-he1778fa_2/chromedriver') # 将chromedriver放在该目录下
+driver=webdriver.Chrome(options=option,executable_path='C:/Users/19735/anaconda3/pkgs/python-3.8.3-he1778fa_2/chromedriver') # 将chromedriver放在该目录下
 #2.编写基于浏览器自动化的操作代码
 driver.get(url='http://scxk.nmpa.gov.cn:81/xk/')#向药监总局页面发请求
 
@@ -31,7 +31,7 @@ page_text=driver.page_source # 获取浏览器当前页面的源码数据
 
 #解析企业名称
 tree=etree.HTML(page_text)
-li_list=tree.xpath("//ul[@id='gzlist']/li")
+li_list=tree.xpath("//*[@id='gzlist']/li")
 print(li_list)
 for li in li_list:
     name=li.xpath("./dl/@title")[0]

@@ -2,8 +2,8 @@
 xpath解析原理：
     1.实例化一个etree对象，且需要将被解析的页面源码数据加载到该对象中。
         如何实例化一个etree对象？
-            1.将本地的html文档中的源码加载到etree对象里  etree.parse（filepath）
-            2.可以将互联网上获取的源码数据加载到该对象中  etree.HTML('page_text')
+            1.将本地的html文档中的源码加载到etree对象里  etree.parse（'filepath'）
+            2.可以将互联网上获取的源码数据加载到该对象中  etree.HTML(page_text)
     2.调用etree对象中的xpath方法结合着xpath表达式实现标签的定位和内容的捕获
         xpath('xpath表达式')
     3.xpath表达式
