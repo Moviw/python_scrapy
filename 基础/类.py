@@ -1,3 +1,10 @@
+'''
+Author: Movix
+Date: 2021-07-26 03:50:19
+LastEditTime: 2021-07-26 16:40:51
+FilePath: \python_scrapy\python基础\类.py
+Description: 
+'''
 #创建一个类
 class Dog():
     #1.类名一般大写 类名后面要加括号,括号里面写的是该类的父类，若没写则父类是Object
@@ -15,7 +22,6 @@ class Dog():
 dog=Dog('asd',2)
 dog.sit()
 dog.roll_over()
-
 #子类调用父类
 class BigDog(Dog):
 

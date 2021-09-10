@@ -1,3 +1,11 @@
+'''
+Author: Movix
+Date: 2021-07-26 03:36:18
+LastEditTime: 2021-07-26 16:01:24
+FilePath: \python_scrapy\python基础\函数.py
+Description: 
+'''
+
 #采用关键字实参时就不能使用位置实参
 def f(a,b):
     print(a,b)
@@ -26,8 +34,6 @@ def f(a):
 a=[1,2,3]
 f(a[::]) #!使用name_of_list[::]可以将列表备份作为参数传递，从而不改变原列表本身的属性
 #*tips:[::]中可以任意选择原数组的切片大小，步长
-
-
 
 #传递任意数量的实参
 def f(*a):
